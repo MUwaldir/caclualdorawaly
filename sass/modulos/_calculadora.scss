@@ -1,0 +1,66 @@
+.bloque1{
+    height: 100vh;
+    &__Calculadora{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__title{
+            position: absolute;
+            top: 20px;
+            font-size: 40px;
+            text-transform: uppercase;
+        }
+        &__caja1{
+            background-color: rgba(31, 30, 30, 0.9);
+            border-radius: 10px;
+            width: 400px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+
+            &--input{
+                width: 80%;
+                height: 40px;
+                background-color: rgb(201, 236, 225);
+                border-radius: 10px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 20px;
+                font-size: 30px;
+                padding-right: 10px;
+                text-align: end;
+                color: black;
+                -webkit-box-shadow: 2px -2px 19px 0px rgba(0,0,0,0.75);
+                -moz-box-shadow: 2px -2px 19px 0px rgba(0,0,0,0.75);
+                box-shadow: 2px -2px 19px 0px rgba(0,0,0,0.75);
+            }
+            &__cajas{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px 5px;
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 30px;
+                &--box{
+                    width: calc(25% - 4px);
+                    background-color: rgb(245, 172, 38);
+                    height: 60px;
+                    border-radius: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 30px;
+                    font-weight: bold;
+                    cursor: pointer;
+                    &:not(:last-child){
+                        background-color: white;
+                    }
+                }
+            }
+        }
+    }
+}
