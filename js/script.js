@@ -122,6 +122,6 @@ igual.addEventListener('click', function(){
         inputTxt = String(resultado);
         input.value= inputTxt;
         }
-    location.reload();
+    inputTxt='';
 })
 
